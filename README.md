@@ -20,22 +20,22 @@
 
 
 
-   
   
    
    ### Backend Setup (master branch)
    1. Clone the repository:
-      ```bash
-      git clone https://github.com/IT21375682/Shopping-cart.git
+      
+      ```
+        git clone https://github.com/IT21375682/Shopping-cart.git
 
-   2. Install dependencies:
+   3. Install dependencies:
 
       ```
-      npm install
+        npm install
    
    3.Create a .env file in the backend directory and add the following environment variables:
    
-    ```
+      ```
        PORT=5000
        MONGODB_URI=your_mongodb_uri
        JWT_SECRET=your_jwt_secret
@@ -51,12 +51,12 @@
    1.Navigate to the frontend directory:
    
      ```
-     cd ../frontend
+      cd ../frontend
      
    2.Install dependencies:
    
     ```
-    npm install
+     npm install
    
    3.Create a .env file in the frontend directory and add the following environment variables:
    
@@ -65,7 +65,7 @@
    
    4.Start the frontend development server:
    
-      ```
+     ```
       npm run start:legacy
    
    Video Demo
