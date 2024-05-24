@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import AuthForm from './components/AuthForm';
+import ProductList from './pages/ProductList';
+import Cart from './components/Cart';
+import Checkout from './pages/Checkout';
+import Button from 'react-bootstrap/Button';
 
-function App() {
+const App = () => {
+  // Define navigateToCheckout function to navigate to the checkout page with cart items
+  const navigateToCheckout = (cartIds) => {
+    // Redirect to the checkout page with cart items as query parameter
+    window.location.href = `/checkout?cartIds=${cartIds.join(',')}`;
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<AuthForm type="login" />} />
+        <Route path="/signup" element={<AuthForm type="signup" />} />
+        <Route path="/products" element={<ProductList />} />
+        {/* Pass navigateToCheckout function as a prop to the Cart component */}
+        <Route path="/cart" element={<Cart navigateToCheckout={navigateToCheckout} />} />
+        <Route path="/checkout" element={<Checkout />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
