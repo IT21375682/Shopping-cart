@@ -5,6 +5,7 @@ import ProductList from './pages/ProductList';
 import Cart from './components/Cart';
 import Checkout from './pages/Checkout';
 import Button from 'react-bootstrap/Button';
+import "./index.css";
 
 const App = () => {
   // Define navigateToCheckout function to navigate to the checkout page with cart items
@@ -15,6 +16,7 @@ const App = () => {
 
   return (
     <Router>
+      <div className='app-container'>
       <Routes>
         <Route path="/" element={<AuthForm type="login" />} />
         <Route path="/signup" element={<AuthForm type="signup" />} />
@@ -23,6 +25,7 @@ const App = () => {
         <Route path="/cart" element={<Cart navigateToCheckout={navigateToCheckout} />} />
         <Route path="/checkout" element={<Checkout />} />
       </Routes>
+      </div>
     </Router>
   );
 };

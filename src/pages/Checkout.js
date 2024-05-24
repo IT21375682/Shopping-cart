@@ -3,6 +3,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
 import './checkout.css';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 
 const paymentMethods = [
@@ -80,7 +81,7 @@ const Checkout = () => {
     if (selectedMethod === 'paypal') {
       // Fetch PayPal QR code from the server
       // This is a placeholder, replace it with actual logic to fetch the QR code
-      setPaypalQR('../Images/QR_Code_example.png');
+      setPaypalQR('/Images/QR_Code_example.png');
     } else {
       setPaypalQR(''); // Clear PayPal QR code
     }
@@ -121,21 +122,22 @@ const Checkout = () => {
         />
         {formik.errors.phone ? <div>{formik.errors.phone}</div> : null}
       </div>
-      <div>
-        <label htmlFor="paymentMethod">Payment Method</label>
-        <select
-          id="paymentMethod"
-          name="paymentMethod"
-          onChange={handlePaymentMethodChange}
-          value={paymentMethod}
-        >
-          <option value="">Select Payment Method</option>
-          {paymentMethods.map(method => (
-            <option key={method.value} value={method.value}>{method.label}</option>
-          ))}
-        </select>
-      </div>
-      {paymentMethod === 'paypal' && paypalQR && (
+      <div className="payment-method-container">
+  <label htmlFor="paymentMethod" className="payment-method-label">Payment Method</label>
+  <select
+    id="paymentMethod"
+    name="paymentMethod"
+    className="payment-method-select"
+    onChange={handlePaymentMethodChange}
+    value={paymentMethod}
+  >
+    <option value="">Select Payment Method</option>
+    {paymentMethods.map(method => (
+      <option key={method.value} value={method.value}>{method.label}</option>
+    ))}
+  </select>
+</div>
+ {paymentMethod === 'paypal' && paypalQR && (
         <div>
           <p>Scan the QR code to complete your payment:</p>
           <img src={paypalQR} alt="PayPal QR Code" />
