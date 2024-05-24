@@ -1,75 +1,54 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# E-Commerce Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
+This is a full-featured e-commerce application built using React for the frontend and Node.js with Express for the backend. The application allows users to browse products, add them to the cart, and proceed to checkout. Admin users can add new products and manage the inventory.
 
-## Available Scripts
+## Features
+- User authentication and authorization
+- Product listing and search functionality
+- Add to cart and view cart items
+- Checkout process with multiple payment methods
+- Admin product management
 
-In the project directory, you can run:
+## Installation Instructions
+To run the application locally, follow these steps:
 
-### `npm start`
+### Prerequisites
+- Node.js and npm installed
+- MongoDB installed and running
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Backend Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/yourrepository.git
+   cd yourrepository/backend
+2. Install dependencies:
+npm install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3.Create a .env file in the backend directory and add the following environment variables:
 
-### `npm test`
+PORT=5000
+MONGODB_URI=your_mongodb_uri
+JWT_SECRET=your_jwt_secret
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Start the backend server:
+npm start
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+###Frontend Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1.Navigate to the frontend directory:
+cd ../frontend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2.Install dependencies:
+npm install
 
-### `npm run eject`
+3.Create a .env file in the frontend directory and add the following environment variables:
+REACT_APP_API_URL=http://localhost:5000/api
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4.Start the frontend development server:
+npm run start:legacy
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# Shopping-cart
-Shopping cart app with MERN
->>>>>>> e7ca5a3e61d555a27933c226208faf926229fe30
+Video Demo
+Watch the setup video for a visual guide on setting up the application
+[https://drive.google.com/drive/folders/1ztzCLY9Xa4DGiTzW4cgLgn6SH73bLghs?usp=sharing](https://shorturl.at/NIkM5)
