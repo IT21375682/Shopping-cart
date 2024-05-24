@@ -56,4 +56,4 @@
    
    Video Demo
    Watch the setup video for a visual guide on setting up the application
-   [https://drive.google.com/drive/folders/1ztzCLY9Xa4DGiTzW4cgLgn6SH73bLghs?usp=sharing](https://shorturl.at/NIkM5)
+   (https://shorturl.at/NIkM5)
