@@ -23,17 +23,19 @@
   
    
    ### Backend Setup (master branch)
-   1. Clone the repository:
-      
-      ```
+  1.Clone the repository:
+
+       ```
         git clone https://github.com/IT21375682/Shopping-cart.git
+      
 
-   3. Install dependencies:
+   2.Install dependencies:
 
       ```
-        npm install
+       npm install
+      
    
-   3.Create a .env file in the backend directory and add the following environment variables:
+   3 Create a .env file in the backend directory and add the following environment variables:
    
       ```
        PORT=5000
