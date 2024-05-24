@@ -25,7 +25,7 @@
    ### Backend Setup (master branch)
    1. Clone the repository:
       ```bash
-      git clone https://github.com/yourusername/yourrepository.git
+      git clone https://github.com/IT21375682/Shopping-cart.git
       cd yourrepository/backend
    2. Install dependencies:
    npm install
