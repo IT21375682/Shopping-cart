@@ -26,9 +26,11 @@
    1. Clone the repository:
       ```bash
       git clone https://github.com/IT21375682/Shopping-cart.git
-      cd yourrepository/backend
+
    2. Install dependencies:
-   npm install
+
+      ```
+      npm install
    
    3.Create a .env file in the backend directory and add the following environment variables:
    
