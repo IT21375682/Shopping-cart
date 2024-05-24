@@ -32,21 +32,26 @@
        JWT_SECRET=your_jwt_secret
    
   4.Start the backend server:
-    ```npm start
+  
+      ```npm start
    
    
    ### Frontend Setup
    
    1.Navigate to the frontend directory:
+   
      ```cd ../frontend
      
    2.Install dependencies:
+   
     ```npm install
    
    3.Create a .env file in the frontend directory and add the following environment variables:
+   
      ```REACT_APP_API_URL=http://localhost:5000/api
    
    4.Start the frontend development server:
+   
       ```npm run start:legacy
    
    Video Demo
